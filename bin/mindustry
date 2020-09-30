@@ -1,6 +1,24 @@
 #! /usr/bin/env bash
 if test [ $1 == update]
 then
-    if test [ -e /etc/mindustry
-    mindustry-update
-else
+   if test [ -e home/$(logname)/.config/mindustry/BE]
+   then
+       mindustry-update-be
+   else
+       mindustry-update
+   fi
+   exit
+fi
+
+if test [ $1 == be]
+then
+   if test [ -e home/$(logname)/.config/mindustry/BE]
+   then
+       rm home/$(logname)/.config/mindustry/BE
+   else
+       echo BE > home/$(logname)/.config/mindustry/BE
+   fi
+   exit 
+fi
+
+

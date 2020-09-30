@@ -5,7 +5,7 @@ if [ `whoami` != 'root' ]
     exit 1
 fi
 mind = (pwd)
-cd /etc
+cd /home/$(logname)/.config/
 mkdir mindustry
 cd $mind
 cp -a /bin/. /usr/bin
