@@ -13,6 +13,6 @@ mkdir Mindustry
 cd Mindustry
 mkdir builds
 cd $mind
-cp -a $(pwd)/bin /bin
+cp -a $(pwd)/bin /
 read
 
