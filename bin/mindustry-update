@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
 curl -s https://api.github.com/repos/anuken/mindustry/releases/latest \
-| grep "browser_download_url.*jar" \
+| grep "browser_download_url. Mindustry.jar" \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
 rm *server*
-mv *Mindustry* /home/$(logname)/.local/share/mindustry/buildsmi
+mv *Mindustry* /home/$(logname)/.local/share/mindustry/builds
