@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-if [[ $1 -eq update ]]
+if [[ $1 -eq "update" ]]
 then
    if [[ -e /home/$(logname)/.config/mindustry/BE ]]
    then
@@ -7,10 +7,11 @@ then
    else
        mindustry-update
    fi
+   echo updoot
    exit
 fi
 
-if [[ $1 -eq run ]]
+if [[ $1 -eq "run" ]]
 then
    if [[ -e /home/$(logname)/.config/mindustry/BE ]]
    then
@@ -18,17 +19,19 @@ then
    else
        mindustry-run
    fi
+    echo "run for the hills"
    exit
 fi
 
-if [[ $1 -eq BE]]
+if [[ $1 -eq "BE" ]]
 then
    if [[ -e /home/$(logname)/.config/mindustry/BE]]
    then
-       rm home/$(logname)/.config/mindustry/BE
+       rm /ome/$(logname)/.config/mindustry/BE
    else
-       echo BE > home/$(logname)/.config/mindustry/BE
+       echo BE > /home/$(logname)/.config/mindustry/BE
    fi
+    echo "beta bugs"
    exit 
 fi
 
