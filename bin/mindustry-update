@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 curl -s https://api.github.com/repos/anuken/mindustry/releases/latest \
-| grep "browser_download_url. Mindustry.jar" \
+| grep "browser_download_url.*jar" \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
