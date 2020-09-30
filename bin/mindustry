@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-if test [[ $1 -eq update]]
+if [[ $1 -eq update ]]
 then
    if test [[ -e home/$(logname)/.config/mindustry/BE ]]
    then
@@ -10,20 +10,20 @@ then
    exit
 fi
 
-if test [[ $1 -eq run]]
+if [[ $1 -eq run ]]
 then
-   if test [[ -e home/$(logname)/.config/mindustry/BE ]]
+   if [[ -e home/$(logname)/.config/mindustry/BE ]]
    then
-       mindustry-update-be
+       mindustry-run-be
    else
-       mindustry-update
+       mindustry-run
    fi
    exit
 fi
 
-if test [[ $1 -eq BE]]
+if [[ $1 -eq BE]]
 then
-   if test [[ -e home/$(logname)/.config/mindustry/BE]]
+   if [[ -e home/$(logname)/.config/mindustry/BE]]
    then
        rm home/$(logname)/.config/mindustry/BE
    else
