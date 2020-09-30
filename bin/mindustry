@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 if [[ $1 -eq update ]]
 then
-   if [[ -e home/$(logname)/.config/mindustry/BE ]]
+   if [[ -e /home/$(logname)/.config/mindustry/BE ]]
    then
        mindustry-update-be
    else
@@ -12,7 +12,7 @@ fi
 
 if [[ $1 -eq run ]]
 then
-   if [[ -e home/$(logname)/.config/mindustry/BE ]]
+   if [[ -e /home/$(logname)/.config/mindustry/BE ]]
    then
        mindustry-run-be
    else
@@ -23,7 +23,7 @@ fi
 
 if [[ $1 -eq BE]]
 then
-   if [[ -e home/$(logname)/.config/mindustry/BE]]
+   if [[ -e /home/$(logname)/.config/mindustry/BE]]
    then
        rm home/$(logname)/.config/mindustry/BE
    else
