@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+mind = $(pwd)
+cd /home/$USER/.local/share/Mindustry/builds/
+latest=$(ls -tp | grep -v /$ | head -1)
+cd $mind
+java -jar /home/$USER/.local/share/Mindustry/builds/$latest
