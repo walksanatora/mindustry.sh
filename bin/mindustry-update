@@ -5,5 +5,5 @@ curl -s https://api.github.com/repos/anuken/mindustry/releases/latest \
 | cut -d : -f 2,3 \
 | tr -d \" \
 | wget -qi -
-rm *Server*
-mv *Desktop* /home/$(logname)/.local/share/mindustry/builds
+rm *server*
+mv *Mindustry* /home/$(logname)/.local/share/mindustry/buildsmi
